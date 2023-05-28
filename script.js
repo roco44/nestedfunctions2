@@ -112,6 +112,75 @@
 // console.log(counter());
 
 //----------------------
+//Will look at Educba again and try to use a modified document.get as copied below
+//document.getElementById("1demo").innerHTML = answer;
+
+// function triangleHypotenuse(base,height)
+// {
+// function square(side){
+// return side*side;
+// }
+// return Math.sqrt(square(base)+square(height));
+// }
+// document.getElementById("2demo").innerHTML = ("Hypotenuse of triangle is : " + triangleHypotenuse(3,4));
+//------------------------------------------------------------------------------------------------------
+
+//I think name,age is not a nested function but two functions
+//Given up on Educba again
+//------------------------------------------------------------
+
+//Back to tektutorialshub
+// function makeCounter() {
+//   let count = 10;
+
+//   decrement = function () {
+//       return --count;
+//   };
+
+//   return decrement;
+// }
+
+// counter1= makeCounter()
+// counter2= makeCounter()
+
+// console.log(counter1());  //1
+// console.log(counter1());  //2
+// console.log(counter1());  //3
+
+// console.log(counter2());  //1
+// console.log(counter2());  //2
+// console.log(counter2());  //3
+//----------------------------
+
+function makeCounter(counterName) {
+  let count = 0;
+
+  let counterObj = {
+      name: counterName,
+      increment: function () {
+          ++count;
+          console.log("name %s count %d",this.name,count)
+          return count
+      }
+  }
+
+  return counterObj 
+}
+
+
+counter1=makeCounter("Counter1")
+counter2=makeCounter("Counter2")
+
+counter1.increment()
+counter2.increment()
+counter2.increment()
+counter1.increment()
+counter1.increment()
+counter2.increment()
+//------------------
+
+
+
 
 
   
