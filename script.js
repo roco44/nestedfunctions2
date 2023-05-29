@@ -152,33 +152,75 @@
 // console.log(counter2());  //3
 //----------------------------
 
-function makeCounter(counterName) {
-  let count = 0;
+// function makeCounter(counterName) {
+//   let count = 0;
 
-  let counterObj = {
-      name: counterName,
-      increment: function () {
-          ++count;
-          console.log("name %s count %d",this.name,count)
-          return count
+//   let counterObj = {
+//       name: counterName,
+//       increment: function () {
+//           ++count;
+//           console.log("name %s count %d",this.name,count)
+//           return count
+//       }
+//   }
+
+//   return counterObj 
+// }
+
+
+// counter1=makeCounter("Counter1")
+// counter2=makeCounter("Counter2")
+
+// counter1.increment()
+// counter2.increment()
+// counter2.increment()
+// counter1.increment()
+// counter1.increment()
+// counter2.increment()
+//------------------
+
+// function outerfunc(a) {
+//   innerFunc = function (b) {
+//       console.log("a %d  b %d",a,b)
+//       document.getElementById("5demo").innerHTML = (a)
+//       document.getElementById("6demo").innerHTML = (b)
+//   };
+//   return innerFunc;
+// }
+// //Get Inner Function
+// InnerFunc=outerfunc(5);
+// //Invoke it
+// InnerFunc(3);
+// //Invoke invoke inner Function directly
+// outerfunc(10)(2);
+
+//---------------------------------------
+
+function outerfunc(a) {
+  innerFunc = function (b) {
+      a=5
+      innermostFunc = function (c) {
+          
+          console.log("a %d  b %d c %d", a, b, c)
       }
-  }
 
-  return counterObj 
+      return innermostFunc;
+  };
+
+  
+  return innerFunc;
 }
 
 
-counter1=makeCounter("Counter1")
-counter2=makeCounter("Counter2")
+//Invoke it
+outerfunc(10)(2)(7);    //a 5  b 2 c 7
 
-counter1.increment()
-counter2.increment()
-counter2.increment()
-counter1.increment()
-counter1.increment()
-counter2.increment()
-//------------------
 
+//Another way
+a = outerfunc(10)
+b = a(2)
+c = b(7)                 //a 5  b 2 c 7
+//--------------------------------------
 
 
 
