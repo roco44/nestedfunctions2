@@ -196,31 +196,46 @@
 
 //---------------------------------------
 
-function outerfunc(a) {
-  innerFunc = function (b) {
-      a=5
-      innermostFunc = function (c) {
+// function outerfunc(a) {
+//   innerFunc = function (b) {
+//       a=5
+//       innermostFunc = function (c) {
           
-          console.log("a %d  b %d c %d", a, b, c)
-      }
+//           console.log("a %d  b %d c %d", a, b, c)
+//       }
 
-      return innermostFunc;
-  };
+//       return innermostFunc;
+//   };
 
   
-  return innerFunc;
+//   return innerFunc;
+// }
+
+
+// //Invoke it
+// outerfunc(10)(2)(7);    //a 5  b 2 c 7
+
+
+// //Another way
+// a = outerfunc(10)
+// b = a(2)
+// c = b(7)                 //a 5  b 2 c 7
+//--------------------------------------
+
+function myFunc(theObject) {
+  theObject.make = "Toyota";
 }
 
+const mycar = {
+  make: "Honda",
+  model: "Accord",
+  year: 1998,
+};
 
-//Invoke it
-outerfunc(10)(2)(7);    //a 5  b 2 c 7
+console.log(mycar.make); // "Honda"
+myFunc(mycar);
+console.log(mycar.make); // "Toyota"
 
-
-//Another way
-a = outerfunc(10)
-b = a(2)
-c = b(7)                 //a 5  b 2 c 7
-//--------------------------------------
 
 
 
