@@ -4,20 +4,23 @@
 //Back to Java*Script Info
 // function sayHiBye(firstName, lastName) {
 
-//     // helper nested function to use below
+//     //helper nested function to use below
 //     function getFullName() {
 //       return firstName + " " + lastName;
 //     }
   
 //     alert( "Hello, " + getFullName() );
+    
 //     alert( "Bye, " + getFullName() );
-  
+    
 //   }
-
-//     sayHiBye("Finn", "Jackson")
-//     sayHiBye("Freya", "Jackson")
-//     sayHiBye("Shona", "Jackson-Russell")
-//     sayHiBye("Ben", "Jackson")
+//     sayHiBye("Finn", "Jackson");
+    
+//     sayHiBye("Finn", "Jackson");
+   
+//     sayHiBye("Freya", "Jackson");
+//     sayHiBye("Shona", "Jackson-Russell");
+//     sayHiBye("Ben", "Jackson");
 //----------------------------------------
 
 // function makeCounter() {
@@ -222,19 +225,50 @@
 // c = b(7)                 //a 5  b 2 c 7
 //--------------------------------------
 
-function myFunc(theObject) {
-  theObject.make = "Toyota";
-}
+// function myFunc(theObject) {
+//   theObject.make = "Toyota";
+// }
 
-const mycar = {
-  make: "Honda",
-  model: "Accord",
-  year: 1998,
-};
+// const mycar = {
+//   make: "Honda",
+//   model: "Accord",
+//   year: 1998,
+// };
 
-console.log(mycar.make); // "Honda"
-myFunc(mycar);
-console.log(mycar.make); // "Toyota"
+// console.log(mycar.make); // "Honda"
+// myFunc(mycar);
+// console.log(mycar.make); // "Toyota"
+//----------------------------------
+
+//golinuxcloud Quackers
+// var migrating = true;
+// var fly = function(num) {
+//     var sound = "Flying";
+//     function wingFlapper() {
+//         console.log(sound)
+//     }
+//     for (var i = 0; i < num; i++) {
+//         wingFlapper();
+//     }
+// };
+// function quack(num) {
+//     var sound = "Quack";
+//     var quacker = function() {
+//         console.log(sound)
+//     };
+//     for (var i = 0; i < num; i++) {
+//         quacker();
+//     }
+// }
+// if(migrating) {
+//     quack(4);
+//     fly(4);
+//     quack(4);
+//     fly(4)
+// }
+
+
+
 
 
 
