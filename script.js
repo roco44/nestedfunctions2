@@ -1,3 +1,19 @@
+// Try my own code
+function envelope(){
+function options(a, b){
+  c = (a * a) + b;
+  return c;
+
+  }
+  function times(a){
+    x = c * a;
+    return x;
+}
+
+options(3, 4);
+  document.getElementById("8demo").innerHTML = times(5);
+}
+envelope()
 
 //From Educba
 // Have given up on Educba exercises due to document.write commands not working!

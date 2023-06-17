@@ -5,5 +5,5 @@ further exercises in jscript nested functions
 "Add more exercises from tektutorialshub and find these more understandable" 
 "Add more tektutorialshub and they work but not sure why, yet!"
 "Add Mmdn console log exercises"
-"golinuxcloud Quackers, It flys and quacks but I don't know why!
-I will work slowly through w3schools explanations"
+"Quacker ok but I don't know why! I will work slowly through w3schools explanations"
+"Now trying my own code - at top of script page, works as is but how to I change values from outside?"
