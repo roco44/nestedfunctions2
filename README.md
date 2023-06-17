@@ -7,3 +7,4 @@ further exercises in jscript nested functions
 "Add Mmdn console log exercises"
 "Quacker ok but I don't know why! I will work slowly through w3schools explanations"
 "Now trying my own code - at top of script page, works as is but how to I change values from outside?"
+"Add from w3schools counter - nested + closure, keep trying!"
