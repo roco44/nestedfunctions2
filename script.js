@@ -18,16 +18,16 @@
 // envelope()
 
 //from w3schools counter - nested + closure
-const add = (function () {
-  let counter = 0;
-  document.getElementById("demoo").innerHTML = counter;
-  return function () {counter += 1; return counter;}
-})
-(); //this must be calling function ()
+// const add = (function () {
+//   let counter = 0;
+//   document.getElementById("demoo").innerHTML = counter;
+//   return function () {counter += 1; return counter;}
+// })
+// (); //this must be calling function ()
 
-function myFunction(){
-  document.getElementById("demo").innerHTML = add();
-}
+// function myFunction(){
+//   document.getElementById("demo").innerHTML = add();
+// }
 
 
 //From Educba
@@ -298,8 +298,48 @@ function myFunction(){
 //     fly(4)
 // }
 
+//An easier goinlinuxcloud example shown below first gilc
+function outerFunction(x) {
+  let y = x + 1;
 
+  function innerFunction(z) {
+      let w = z + y;
+      return w;
+  }
 
+  return innerFunction;
+}
+
+let result = outerFunction(1)(2);
+console.log(result);
+
+//another goinlinuxcloud example
+// function add(a, b) {
+//   return a + b;
+// }
+
+// function divide(a, b) {
+//   return a / b;
+// }
+
+// function stat(a, b) {
+//   let adx = add(a, b);
+//   let dex = divide(a, b);
+
+//   return (adx * dex) ** b;
+// }
+
+// console.log(stat(3, 5));
+
+//and another goinlinuxcloud example
+//inner anonymous
+function outer(a) {
+  return function (b) {
+      return a / b;
+  };
+}
+
+console.log(outer(3)(5));
 
 
 
