@@ -11,23 +11,28 @@
 //     x = c * a;
 //     return x;
 // }
-
 // options(3, 4);
+//   console.log(times(11));
 //   document.getElementById("8demo").innerHTML = times(5);
 // }
 // envelope()
 
 //from w3schools counter - nested + closure
-// const add = (function () {
-//   let counter = 0;
-//   document.getElementById("demoo").innerHTML = counter;
-//   return function () {counter += 1; return counter;}
-// })
-// (); //this must be calling function ()
+const add = (function () {
+  let counter = 0;
+  
+  document.getElementById("demoo").innerHTML = counter;
+  console.log("demoo" + counter);
+  return function () {counter++; return counter;}
+})
+(); //this must be calling function ()
 
-// function myFunction(){
-//   document.getElementById("demo").innerHTML = add();
-// }
+function myFunction(){
+  console.log("demo" + add());
+  document.getElementById("demo").innerHTML = add();
+  
+}
+  
 
 
 //From Educba
@@ -299,19 +304,19 @@
 // }
 
 //An easier goinlinuxcloud example shown below first gilc
-function outerFunction(x) {
-  let y = x + 1;
+// function outerFunction(x) {
+//   let y = x + 1;
 
-  function innerFunction(z) {
-      let w = z + y;
-      return w;
-  }
+//   function innerFunction(z) {
+//       let w = z + y;
+//       return w;
+//   }
 
-  return innerFunction;
-}
+//   return innerFunction;
+// }
 
-let result = outerFunction(1)(2);
-console.log(result);
+// let result = outerFunction(1)(2);
+// console.log(result);
 
 //another goinlinuxcloud example
 // function add(a, b) {
@@ -333,13 +338,13 @@ console.log(result);
 
 //and another goinlinuxcloud example
 //inner anonymous
-function outer(a) {
-  return function (b) {
-      return a / b;
-  };
-}
+// function outer(a) {
+//   return function (b) {
+//       return a / b;
+//   };
+// }
 
-console.log(outer(3)(5));
+// console.log(outer(3)(5));
 
 
 

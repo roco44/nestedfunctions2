@@ -9,3 +9,5 @@ further exercises in jscript nested functions
 "Now trying my own code - at top of script page, works as is but how to I change values from outside?"
 "Add from w3schools counter - nested + closure, keep trying!"
 "An easier goinlinuxcloud example shown below first gilc, plus two more all in console"
+
+"Add envelope and counter, both work but with quirks"
