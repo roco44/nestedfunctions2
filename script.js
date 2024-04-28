@@ -1,77 +1,85 @@
 // Try my own code
 
 
-// function envelope(){
-// function options(a, b){
-//   c = (a * a) + b;
-//   return c;
+function envelope(){
+function options(a, b){
+  c = (a * a) + b;
+  return c;
 
-//   }
-//   function times(a){
-//     x = c * a;
-//     return x;
-// }
-// options(3, 4);
-//   console.log(times(11));
-//   document.getElementById("8demo").innerHTML = times(5);
-// }
-// envelope()
+  }
+  function times(a){
+    x = c * a;
+    return x;
+}
+options(3, 4);
+  console.log(times(5));
+  document.getElementById("8demo").innerHTML = times(5);
+}
+envelope()
 
 //from w3schools counter - nested + closure
-const add = (function () {
-  let counter = 0;
+// const add = (function () {
+//   let counter = 0;
   
-  document.getElementById("demoo").innerHTML = counter;
-  console.log("demoo" + counter);
-  return function () {counter++; return counter;}
-})
-(); //this must be calling function ()
+//   document.getElementById("demoo").innerHTML = counter;
+//   console.log("demoo" + counter);
+//   return function () {counter++; return counter;}
+// })
+// // (); //this must be calling function ()
 
-function myFunction(){
-  console.log("demo" + add());
-  document.getElementById("demo").innerHTML = add();
+// // function myFunction(){
+//   ();
+//   console.log("demo" + add());
+//   document.getElementById("demo").innerHTML = add();
   
-}
+// }
   
 
 
 //From Educba
 // Have given up on Educba exercises due to document.write commands not working!
 //Back to Java*Script Info
-// function sayHiBye(firstName, lastName) {
+function sayHiBye(firstName, lastName) {
 
-//     //helper nested function to use below
-//     function getFullName() {
-//       return firstName + " " + lastName;
-//     }
+    //helper nested function to use below
+    function getFullName() {
+      return firstName + " " + lastName;
+    }
   
-//     alert( "Hello, " + getFullName() );
+    alert( "Hello, " + getFullName() );
+    console.log("Hello, " + getFullName());
+    document.getElementById("hi1").innerHTML = ("Hello, " + getFullName());
     
-//     alert( "Bye, " + getFullName() );
+    alert( "Bye, " + getFullName() );
+    console.log("Bye, " + getFullName());
+    document.getElementById("bye1").innerHTML = ("Bye, " + getFullName());
     
-//   }
-//     sayHiBye("Finn", "Jackson");
+  }
+    sayHiBye("Finn", "Jackson");
     
-//     sayHiBye("Finn", "Jackson");
+    sayHiBye("Finn", "Jackson");
    
-//     sayHiBye("Freya", "Jackson");
-//     sayHiBye("Shona", "Jackson-Russell");
-//     sayHiBye("Ben", "Jackson");
+    // sayHiBye("Freya", "Jackson");
+    // sayHiBye("Shona", "Jackson-Russell");
+    // sayHiBye("Ben", "Jackson");
 //----------------------------------------
 
-// function makeCounter() {
-//     let count = 0;
+function makeCounter() {
+    let count = 0;
   
-//     return function() {
-//       return count++;
-//     };
-//   }
+    return function() {
+      return count++;
+    };
+  }
   
-//   let counter = makeCounter();
+  let counter = makeCounter();
   
-//   alert( counter() ); // 0
-//   alert( counter() ); // 1
-//   alert( counter() ); // 2
+  alert( counter() ); // 0
+  document.getElementById("count1").innerHTML = (counter());
+  alert( counter() ); // 1
+  document.getElementById("count2").innerHTML = (counter());
+  alert( counter() ); // 2
+  document.getElementById("count3").innerHTML = (counter());
   //--------------------------
 
 //TutorialsPoint
